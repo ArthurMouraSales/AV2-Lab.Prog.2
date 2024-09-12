@@ -1,17 +1,17 @@
-while True:
+def calculadora():
     num1 = float(input("Digite um valor: "))
     num2 = float(input("Digite outro valor"))
-    resp = input("Qual operação você quer realizar? ")
-    if resp == "adicao":
+    operacao = input("Qual operação você quer realizar? ")
+    if operacao == "adicao":
         adicao = num1 + num2
         print(f"{adicao}")
-    elif resp == "subtracao":
+    elif operacao == "subtracao":
         sub = num1 - num2
         print(f"{sub}")
-    elif resp == "multiplicacao":
+    elif operacao == "multiplicacao":
         mult = num1 * num2
         print(f"{mult}")
-    elif resp == "divisao":
+    elif operacao == "divisao":
         if num2 == 0:
             print("Não é possivel dividir por 0")
         else:
@@ -19,4 +19,11 @@ while True:
             print(f"{div}")
     else:
         print("Erro na digitação da operação")
+while True:
+    calculadora()
+    resp = input("Deseja realizar mais alguma operação |S - Sim|N - Não|? ").upper()
+    if resp == "S":
+        calculadora()
+    else:
+        break
 
