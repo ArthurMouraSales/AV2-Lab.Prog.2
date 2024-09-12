@@ -1,17 +1,18 @@
 def calculadora():
     num1 = float(input("Digite um valor: "))
     num2 = float(input("Digite outro valor"))
-    operacao = input("Qual operação você quer realizar? ")
-    if operacao == "adicao":
+    print("Para a proxima pergunta utilize |A - Adição|S - Subtração|M - Multiplicação|D - Divisão|")
+    operacao = input("Qual operação você quer realizar? ").upper()
+    if operacao == "A":
         adicao = num1 + num2
         print(f"{adicao}")
-    elif operacao == "subtracao":
+    elif operacao == "S":
         sub = num1 - num2
         print(f"{sub}")
-    elif operacao == "multiplicacao":
+    elif operacao == "M":
         mult = num1 * num2
         print(f"{mult}")
-    elif operacao == "divisao":
+    elif operacao == "D":
         if num2 == 0:
             print("Não é possivel dividir por 0")
         else:
