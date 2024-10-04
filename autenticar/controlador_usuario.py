@@ -1,13 +1,4 @@
-def login():
-    username = input("Digite seu username: ")
-    password = input("Digite sua senha: ")
-
-for login in usuarios:
-    if login = usuarios:
-        prin
-
-
-
+#Questão 5
 usuarios = [
     {
         "username": "teste",
@@ -26,3 +17,16 @@ usuarios = [
         "password": "admin4" 
     },
 ]
+def login():
+    username = input("Digite seu username: ")
+    password = input("Digite sua senha: ")
+
+    for login in usuarios:
+        if login['username'] == username and login['password'] == password:
+            print("Acesso Liberado")
+            return 1
+        else:
+            print("Acesso negado")
+            return 1
+
+login()

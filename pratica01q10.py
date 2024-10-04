@@ -1,0 +1,1 @@
+#função qe recebe uma string e retorna o numero de palavras na string
